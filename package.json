@@ -13,5 +13,20 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "cds":{
+    "server":{
+      "index":true
+    },
+    "requires": {
+      "auth":{
+        "kind":"basic",
+        "users": {
+          "Dummy": {
+            "password": "Dummy@123456"
+          }
+        }
+      }
+    }
+  }
 }
